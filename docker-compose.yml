@@ -1,7 +1,7 @@
 version: "2"
 services:
     debian:
-        image: pkecastillo/underbian
+        image: pkecastillo/underbian:TAG
         container_name: "Debian Server"
         user: root
         privileged: true
