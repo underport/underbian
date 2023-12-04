@@ -1,0 +1,13 @@
+version: "2"
+services:
+    debian:
+        image: pkecastillo/underbian
+        container_name: "Debian Server"
+        user: root
+        privileged: true
+        network_mode: host
+        stdin_open: true
+        restart: always
+        volumes:
+            - /etc/localtime:/etc/localtime:ro
+        cpu_shares: 2
